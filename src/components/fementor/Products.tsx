@@ -18,7 +18,7 @@ const StProducts = styled.div`
         ${tw`text-3xl font-serif font-weight[bold] pb-7`}
       }
       p {
-        ${tw`text-sm leading-relaxed `}
+        ${tw`text-base leading-relaxed md:text-lg `}
       }
     }
   }
@@ -28,7 +28,7 @@ function Products() {
   return (
     <StProducts>
       <div>
-        <Image src={cherrys} layout="fill" />
+        <Image src={cherrys} layout="fill" objectFit="cover" />
         <div>
           <h3>Graphic Design</h3>
           <p>
@@ -39,7 +39,7 @@ function Products() {
         </div>
       </div>
       <div>
-        <Image src={orange} layout="fill" />
+        <Image src={orange} layout="fill" objectFit="cover" />
         <div>
           <h3>Photography</h3>
           <p>
